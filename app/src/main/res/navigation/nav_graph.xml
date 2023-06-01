@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/MenuListFragment">
+
+    <fragment
+        android:id="@+id/MenuListFragment"
+        android:name="com.dev.pizzahub.presentation.menu_list.MenuListFragment"
+        android:label="@string/menu_list_fragment_label"
+        tools:layout="@layout/fragment_menu_list">
+
+        <action
+            android:id="@+id/action_MenuListFragment_to_SummaryFragment"
+            app:destination="@id/SummaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SummaryFragment"
+        android:name="com.dev.pizzahub.presentation.summary.SummaryFragment"
+        android:label="@string/summary_fragment_label"
+        tools:layout="@layout/fragment_summary">
+
+        <action
+            android:id="@+id/action_SummaryFragment_to_MenuListFragment"
+            app:destination="@id/MenuListFragment" />
+    </fragment>
+</navigation>

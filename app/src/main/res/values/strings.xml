@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">PizzaHub: Slice of Life</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="menu_list_fragment_label">Menu List</string>
+    <string name="summary_fragment_label">Summary</string>
+    <string name="choose_your_favorite_pizza_flavor">Choose your favorite pizza flavor</string>
+    <string name="total_price_0">Total Price: $0</string>
+    <string name="total_price">Total Price: $%s</string>
+    <string name="confirm_order">Confirm Order</string>
+</resources>
